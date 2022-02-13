@@ -49,7 +49,7 @@ export default function ActionAreaCard ({ id, name, image, detail }) {
         </CardActionArea>
       </Card>
       </div>
-      <div className='absolute bottom-1 right-8 cursor-pointer'>
+      <div className='absolute bottom-0 right-30 cursor-pointer'>
         <EditIcon onClick={() => history.push(`/edit/${id}`)} />
         <DeleteIcon onClick={() => DeleteImage()} />
       </div>
