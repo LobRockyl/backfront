@@ -16,7 +16,7 @@ export default function ActionAreaCard ({ id, name, image, detail }) {
   const DeleteImage = async () => {
     const res = await fetch(`https://backend-lobrockyl.herokuapp.com/delete/${id}`, { method: 'DELETE' })
     const result = await res.json();
-    if (result.success) window.location.reload();
+    if (result.success) history.push(`/`);
   }
   // const Style = {
   //   height: 32,
